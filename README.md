@@ -29,6 +29,14 @@
 
 Вторым протоколом можно включить VLESS (VLESS + Reality через [Xray](https://github.com/XTLS/Xray-core)): он работает поверх TCP и подходит для приложений Happ, v2RayTun, Hiddify, Streisand, Shadowrocket и v2rayNG.
 
+## Что нового в [v0.8.7](https://github.com/igorkuznecov/awg-nui-releases/releases/tag/v0.8.7)
+
+В карточке клиента можно выбрать выход по IPv4, IPv6 или по обоим сразу. Оба варианта включены по умолчанию. Настройка действует для AmneziaWG и VLESS при прямом выходе и через Cloudflare WARP. Вариант «только IPv6» доступен, когда у клиента есть выход по IPv6.
+
+<p align="center">
+  <img src="images/client-ip-families.png" width="472" alt="Флажки IPv4 и IPv6 в форме клиента">
+</p>
+
 ## Что умеет
 
 - **Устройства в пару кликов.** Добавили клиента — получили QR-код и файл конфигурации для приложения.
