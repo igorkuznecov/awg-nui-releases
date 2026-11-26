@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="https://github.com/igorkuznecov/awg-nui-releases/releases/latest"><img src="https://img.shields.io/github/v/release/igorkuznecov/awg-nui-releases?style=flat-square&label=%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F&color=a89070" alt="Последняя версия"></a>
-  <img src="https://img.shields.io/badge/Ubuntu%2022.04%20%2F%2024.04%20%C2%B7%20Debian%2012%20%2F%2013-2b2d31?style=flat-square" alt="Ubuntu 22.04 / 24.04 · Debian 12 / 13">
+  <img src="https://img.shields.io/badge/Ubuntu%2022.04%20%2F%2024.04%20%2F%2026.04%20%C2%B7%20Debian%2012%20%2F%2013-2b2d31?style=flat-square" alt="Ubuntu 22.04 / 24.04 / 26.04 · Debian 12 / 13">
 </p>
 
 <p align="center">
@@ -29,13 +29,9 @@
 
 Вторым протоколом можно включить VLESS (VLESS + Reality через [Xray](https://github.com/XTLS/Xray-core)): он работает поверх TCP и подходит для приложений Happ, v2RayTun, Hiddify, Streisand, Shadowrocket и v2rayNG.
 
-## Что нового в [v0.8.7](https://github.com/igorkuznecov/awg-nui-releases/releases/tag/v0.8.7)
+## Что нового в [v0.8.8](https://github.com/igorkuznecov/awg-nui-releases/releases/tag/v0.8.8)
 
-В карточке клиента можно выбрать выход по IPv4, IPv6 или по обоим сразу. Оба варианта включены по умолчанию. Настройка действует для AmneziaWG и VLESS при прямом выходе и через Cloudflare WARP. Вариант «только IPv6» доступен, когда у клиента есть выход по IPv6.
-
-<p align="center">
-  <img src="images/client-ip-families.png" width="472" alt="Флажки IPv4 и IPv6 в форме клиента">
-</p>
+Панель теперь можно установить на сервер с Ubuntu 26.04 LTS. Скачайте установщик v0.8.8 для Windows или macOS либо запустите скрипт из этого релиза на сервере. Установщик сам соберёт модуль AmneziaWG для работающего ядра.
 
 ## Что умеет
 
@@ -51,6 +47,12 @@
 - **IPv6**, если он есть у сервера, или через WARP.
 
 ## Как это выглядит
+
+В карточке клиента можно выбрать выход по IPv4, IPv6 или по обоим сразу. Оба варианта включены по умолчанию. Настройка действует для AmneziaWG и VLESS при прямом выходе и через Cloudflare WARP. Вариант «только IPv6» доступен, когда у клиента есть выход по IPv6.
+
+<p align="center">
+  <img src="images/client-ip-families.png" width="472" alt="Флажки IPv4 и IPv6 в форме клиента">
+</p>
 
 <p align="center">
   <img src="images/clients.png" alt="Список клиентов: протоколы, трафик, скорость, лимиты, сроки">
@@ -74,7 +76,7 @@
 
 ## Что понадобится
 
-- **Сервер (VPS)** с Ubuntu 22.04 / 24.04 или Debian 12 / 13 на виртуализации KVM. Хватит недорогого тарифа с одним ядром. OpenVZ и LXC не подойдут: для AmneziaWG нужен модуль ядра.
+- **Сервер (VPS)** с Ubuntu 22.04 / 24.04 / 26.04 или Debian 12 / 13 на виртуализации KVM. Хватит недорогого тарифа с одним ядром. OpenVZ и LXC не подойдут: для AmneziaWG нужен модуль ядра.
 - **Доступ к серверу по SSH** под root или под пользователем с sudo: адрес и пароль (или SSH-ключ) хостер присылает после покупки.
 - **Приложение на устройствах** с поддержкой AmneziaWG 3.1: AmneziaWG для Windows 3.1.0 и новее, для Android 3.1.20260814 и новее или AmneziaVPN 5.0.1.5 и новее. Для VLESS — приложение с поддержкой VLESS + Reality, например Happ, v2RayTun, Hiddify, Streisand, Shadowrocket или v2rayNG.
 
